@@ -1,0 +1,31 @@
+@import "./all";
+
+body {
+  font-family: "Avenir", sans-serif;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.signup-btn {
+  background: $caster-purple;
+  width: 180px;
+  padding: 8px 15px;
+  border-radius: 30px;
+  text-align: center;
+  color: $caster-purple-invert;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .95;
+  }
+  &:active {
+    opacity: .9;
+  }
+}

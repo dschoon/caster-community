@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://castercommunity.netlify.com/* https://castercommunity.com/:splat 301!
