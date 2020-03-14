@@ -4,52 +4,69 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const SignUpPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+export const SignUpPageTemplate = ({ title, description, button, price, content, contentComponent }) => {
+    const PageContent = contentComponent || Content;
 
-  return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
+    return (
+        <div className='signup-page'>
+            <div className='left-section'>
+                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                    {title}
+                </h2>
+                <div className='description'>{description}</div>
+                <div className='price'>{price}</div>
+                <div className='button-container'>
+                    <a href='http://eepurl.com/gPvg4D'>
+                        <button className='signup-btn noselect'>{button}</button>
+                    </a>
+                </div>
             </div>
-          </div>
+            <div className='right-section'>
+                <div className="container">
+                    <div className="columns">
+                        <div className="column is-10 is-offset-1">
+                            <div className="section">
+                                <PageContent className="content" content={content} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-  )
+    )
 };
 
 SignUpPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    button: PropTypes.string,
+    price: PropTypes.string,
+    content: PropTypes.string,
+    contentComponent: PropTypes.func,
 };
 
 const SignupPage = ({ data }) => {
-  const { markdownRemark: post } = data;
+    const { markdownRemark: post } = data;
 
-  return (
-    <Layout>
-      <SignUpPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
-    </Layout>
-  )
+    return (
+        <Layout>
+            <SignUpPageTemplate
+                contentComponent={HTMLContent}
+                title={post.frontmatter.title}
+                description={post.frontmatter.description}
+                button={post.frontmatter.button}
+                price={post.frontmatter.price}
+                content={post.html}
+            />
+        </Layout>
+    )
 };
 
 SignupPage.propTypes = {
-  data: PropTypes.object.isRequired,
+    data: PropTypes.object.isRequired,
 };
 
-export default SignupPage
+export default SignupPage;
 
 export const signUpPageQuery = graphql`
   query SignUpPage($id: String!) {
@@ -57,6 +74,9 @@ export const signUpPageQuery = graphql`
       html
       frontmatter {
         title
+        description
+        button
+        price
       }
     }
   }

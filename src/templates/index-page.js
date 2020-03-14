@@ -8,7 +8,7 @@ export const IndexPageTemplate = ({
   heading,
   mainpitch,
 }) => (
-  <div>
+  <div className="home-page">
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -20,7 +20,9 @@ export const IndexPageTemplate = ({
                   <div dangerouslySetInnerHTML={{ __html: mainpitch.description }} />
                 </div>
                 <div style={{ marginTop: '60px' }}>
-                  <div className='signup-btn noselect'>{mainpitch.button}</div>
+                  <a href='/signup'>
+                    <button className='signup-btn noselect'>{mainpitch.button}</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -28,6 +30,9 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
+    <div className='footer-section'>
+      <a href='https://schoon.me' target='_blank'>SchoonLabs</a>
+    </div>
   </div>
 );
 

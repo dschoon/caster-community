@@ -1,19 +1,19 @@
 ---
 templateKey: 'signup-page'
 path: /signup
-title: Signup for Caster Community
+title: An exclusive community for podcasters
+description: 'Applications for April 2020 are now open!'
+button: Join the waitlist
+price: 'Membership Fee: $99/year'
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Engaged Members
+Our goal is to build a community that is highly engaged, and highly supportive of one another. If you aren't interested in contributing to the combined success of your fellow members, our community isn't the place for you. 
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+### Podcast Fans
+Our community is centered around podcasting, but don't worry, it's not required that you have a podcast to join! Our members are all passionate about podcasts though, and while we discuss many personal topics, we try to keep conversations focused on the topic.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+### The Highest Quality
+We realize that paying an annual fee is sometimes intimidating. The reason we charge is to ensure quality. Our goal is to build a community of users who are dedicated to helping one another grow, and we've found that you don't get this type of quality when it's free to join. That being said, we don't want this to ever limit access. If you have a reason you, or someone you know, cannot afford this, please [let us know](mailto:dan@schoonlabs.com).
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+### A Welcoming Place
+We want you to always feel safe opening up and sharing the obstacles you're facing. Because of this, we reserve the right to remove access to any community member who is not upholding their end of our community aggreement. We have a strict zero tolerance policy when it comes to treating other community members poorly.
