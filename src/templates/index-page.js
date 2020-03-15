@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 
 import Layout from '../components/Layout';
 
@@ -21,7 +22,14 @@ export const IndexPageTemplate = ({
                 </div>
                 <div style={{ marginTop: '60px' }}>
                   <a href='/signup'>
-                    <button className='signup-btn noselect'>{mainpitch.button}</button>
+                    <button className='signup-btn noselect' onClick={e => {
+                      e.preventDefault();
+                      trackCustomEvent({
+                        category: "Button",
+                        action: "Click",
+                        label: "Join Us - Home Page"
+                      });
+                    }}>{mainpitch.button}</button>
                   </a>
                 </div>
               </div>
@@ -31,7 +39,14 @@ export const IndexPageTemplate = ({
       </div>
     </section>
     <div className='footer-section'>
-      <a href='https://schoon.me' target='_blank'>SchoonLabs</a>
+      <a href='https://schoon.me' target='_blank' onClick={e => {
+        e.preventDefault();
+        trackCustomEvent({
+          category: "Link",
+          action: "Click",
+          label: "SchoonLabs - Home Page"
+        });
+      }}>SchoonLabs</a>
     </div>
   </div>
 );

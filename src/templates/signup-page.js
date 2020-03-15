@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 
 export const SignUpPageTemplate = ({ title, description, button, price, content, contentComponent }) => {
     const PageContent = contentComponent || Content;
@@ -17,7 +18,14 @@ export const SignUpPageTemplate = ({ title, description, button, price, content,
                 <div className='price'>{price}</div>
                 <div className='button-container'>
                     <a href='http://eepurl.com/gPvg4D'>
-                        <button className='signup-btn noselect'>{button}</button>
+                        <button className='signup-btn noselect' onClick={e => {
+                            e.preventDefault();
+                            trackCustomEvent({
+                                category: "Button",
+                                action: "Click",
+                                label: "Join the waitlist - Signup Page"
+                            });
+                        }}>{button}</button>
                     </a>
                 </div>
             </div>
