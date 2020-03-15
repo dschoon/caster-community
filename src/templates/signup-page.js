@@ -18,8 +18,7 @@ export const SignUpPageTemplate = ({ title, description, button, price, content,
                 <div className='price'>{price}</div>
                 <div className='button-container'>
                     <a href='http://eepurl.com/gPvg4D'>
-                        <button className='signup-btn noselect' onClick={e => {
-                            e.preventDefault();
+                        <button className='signup-btn noselect' onClick={() => {
                             trackCustomEvent({
                                 category: "Button",
                                 action: "Click",

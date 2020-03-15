@@ -22,8 +22,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <div style={{ marginTop: '60px' }}>
                   <a href='/signup'>
-                    <button className='signup-btn noselect' onClick={e => {
-                      e.preventDefault();
+                    <button className='signup-btn noselect' onClick={() => {
                       trackCustomEvent({
                         category: "Button",
                         action: "Click",
@@ -39,8 +38,7 @@ export const IndexPageTemplate = ({
       </div>
     </section>
     <div className='footer-section'>
-      <a href='https://schoon.me' target='_blank' onClick={e => {
-        e.preventDefault();
+      <a href='https://schoon.me' target='_blank' onClick={() => {
         trackCustomEvent({
           category: "Link",
           action: "Click",
