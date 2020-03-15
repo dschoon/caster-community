@@ -50,6 +50,8 @@ html, body {
 
 .home-page {
   margin-top: 90px;
+  overflow-x: hidden;
+  height: calc(100vh - 80px);
 
   .footer-section {
     position: fixed;
