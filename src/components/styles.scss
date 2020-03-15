@@ -51,7 +51,7 @@ html, body {
 .home-page {
   margin-top: 90px;
   overflow-x: hidden;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 140px);
 
   .footer-section {
     position: fixed;
@@ -136,5 +136,10 @@ html, body {
   }
   .button-container {
     margin-top: 30px;
+  }
+  .home-page {
+    margin-top: 70px;
+    overflow-x: hidden;
+    height: calc(100vh - 140px);
   }
 }
