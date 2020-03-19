@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
+import slackImg from '../img/CasterCommunity.jpg';
 
 import Layout from '../components/Layout';
 
@@ -30,6 +31,9 @@ export const IndexPageTemplate = ({
                       });
                     }}>{mainpitch.button}</button>
                   </a>
+                </div>
+                <div style={{ display: 'flex', marginTop: '100px', justifyContent: 'center' }}>
+                  <img src={slackImg} alt='Caster Community' width={600} style={{ border: '1px solid' }} />
                 </div>
               </div>
             </div>
