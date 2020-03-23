@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Dan Schoonmaker",
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.1.0",
+    "@stripe/stripe-js": "^1.2.0",
     "bulma": "^0.8.0",
     "gatsby": "^2.13.31",
     "gatsby-image": "^2.0.23",

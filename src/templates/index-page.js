@@ -42,6 +42,13 @@ export const IndexPageTemplate = ({
       </div>
     </section>
     <div className='footer-section'>
+      <a href='https://CasterKit.com' target='_blank' onClick={() => {
+        trackCustomEvent({
+          category: "Link",
+          action: "Click",
+          label: "CasterKit - Home Page"
+        });
+      }}>CasterKit</a>
       <a href='https://schoon.me' target='_blank' onClick={() => {
         trackCustomEvent({
           category: "Link",

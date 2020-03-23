@@ -4,7 +4,7 @@ path: /signup
 title: An exclusive community for podcasters
 description: 'Applications for April 2020 are now open!'
 button: Join the waitlist
-price: 'Membership Fee: $99/year'
+price: 'Membership Fee: $49/year'
 ---
 ### Engaged Members
 Our goal is to build a community that is highly engaged, and highly supportive of one another. If you aren't interested in contributing to the combined success of your fellow members, our community isn't the place for you. 
