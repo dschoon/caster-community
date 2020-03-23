@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({
                   </a>
                 </div>
                 <div style={{ display: 'flex', marginTop: '100px', justifyContent: 'center' }}>
-                  <img src={slackImg} alt='Caster Community' width={600} style={{ border: '1px solid' }} />
+                  <img src={slackImg} alt='Caster Community' width={600} style={{ border: '1px solid', width: '600px', height: '500px' }} />
                 </div>
               </div>
             </div>
