@@ -12,7 +12,7 @@ export const PaymentPageTemplate = () => (
         <div className="section">
           <div className="columns">
             <div className="payment-content">
-              <iframe width="480" height="480" src="https://api.pico.tools/pn/castercommunity/7ya952k4" frameBorder="0"/>
+              <iframe width="480" height="480" src="https://api.pico.tools/pn/castercommunity" frameBorder="0" />
             </div>
           </div>
         </div>

@@ -129,24 +129,6 @@ class CheckoutForm extends React.Component {
         if (cardComplete) {
             this.setState({processing: true});
         }
-
-        const payload = await stripe.createPaymentMethod({
-            type: 'card',
-            card: elements.getElement(CardElement),
-            billing_details: {
-                email,
-                phone,
-                name,
-            },
-        });
-
-        this.setState({processing: false});
-
-        if (payload.error) {
-            this.setState({error: payload.error});
-        } else {
-            this.setState({paymentMethod: payload.paymentMethod});
-        }
     };
 
     reset = () => {
