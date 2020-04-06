@@ -29,11 +29,8 @@ export const PaymentPageTemplate = ({
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="content">
-                <h1 style={{ marginTop: '-30px', textAlign: 'center' }}>{heading}</h1>
-                <Elements stripe={stripePromise} options={ELEMENTS_OPTIONS}>
-                  <InjectedCheckoutForm />
-                </Elements>
+              <div className="payment-content">
+                <iframe width="480" height="480" src="https://api.pico.tools/pn/castercommunity/7ya952k4" frameBorder="0"/>
               </div>
             </div>
           </div>
