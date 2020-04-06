@@ -8,7 +8,17 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
-    }
+    };
+
+    let pageInfo = {
+      article: false,
+      post_id: 1,
+      post_type: 'home',
+      taxonomies: {},
+      url: window.location.href
+    };
+
+    window.pico && window.pico('visit', pageInfo);
   }
 
   toggleHamburger = () => {

@@ -46,6 +46,7 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
+        <script src={`${withPrefix('/')}picoScript.js`} />
       </Helmet>
       <Navbar />
       <div>{children}</div>

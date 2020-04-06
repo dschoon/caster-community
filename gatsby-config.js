@@ -37,13 +37,6 @@ module.exports = {
         name: 'images',
       },
     },
-    {
-      resolve: 'gatsby-plugin-load-script',
-      options: {
-        src: `${__dirname}/static/script/picoScript.js`,
-        crossorigin: 'anonymous',
-      },
-    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
