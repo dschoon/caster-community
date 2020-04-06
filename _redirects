@@ -1,2 +1,3 @@
 # Redirect default Netlify subdomain to primary domain
 https://castercommunity.netlify.com/* https://castercommunity.com/:splat 301!
+https://join.castercommunity.com/* https://api.pico.tools/pn/castercommunity 301!
