@@ -16,9 +16,14 @@ html, body {
   z-index: 999;
 }
 
+.section {
+  padding: 100px 40px 60px !important;
+}
+
 .signup-page {
   display: flex;
   flex-direction: row;
+  padding: 93px 0 60px !important;
 
   .left-section {
     padding: 200px 20px;
@@ -53,7 +58,7 @@ html, body {
 
 .home-page {
   overflow-x: hidden;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 40px);
 
   .footer-section {
     position: fixed;
@@ -140,6 +145,6 @@ html, body {
   }
   .home-page {
     overflow-x: hidden;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 40px);
   }
 }

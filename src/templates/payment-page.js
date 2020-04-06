@@ -11,8 +11,15 @@ export const PaymentPageTemplate = () => (
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="payment-content">
-              <iframe width="480" height="480" src="https://api.pico.tools/pn/castercommunity" frameBorder="0" />
+            <div className="payment-content" style={{ width: '600px', textAlign: 'center' }}>
+              <div style={{ fontSize: '24px', fontWeight: '600', marginBottom: '20px' }}>Congratulations! You've been invited to the April cohort of the Caster Community.</div>
+              <div>As we continue to work on building up our community of podcasters, we've temporarily lowered the price to $25/year. This fee is 100% refundable at anytime.</div>
+              <a href='https://api.pico.tools/pn/castercommunity'>
+                <button>
+                  Join Now
+                </button>
+              </a>
+              <div className='disclaimer'>Payment handled by <a href='https://trypico.com/' target='_blank'>Pico</a></div>
             </div>
           </div>
         </div>

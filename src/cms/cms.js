@@ -11,4 +11,4 @@ CMS.registerMediaLibrary(cloudinary);
 
 CMS.registerPreviewTemplate('index', IndexPagePreview);
 CMS.registerPreviewTemplate('signup', SignUpPagePreview);
-CMS.registerPreviewTemplate('payment', PaymentPagePreview);
+CMS.registerPreviewTemplate('join', PaymentPagePreview);
