@@ -22,7 +22,7 @@ export const IndexPageTemplate = ({
                   <div dangerouslySetInnerHTML={{ __html: mainpitch.description }} />
                 </div>
                 <div style={{ marginTop: '60px' }}>
-                  <a href='/signup'>
+                  <a href='https://join.slack.com/t/casterkit/shared_invite/zt-df6e62yu-Rp8a6bUF1h_S3J1LJyYI2w'>
                     <button className='signup-btn noselect' onClick={() => {
                       trackCustomEvent({
                         category: "Button",
